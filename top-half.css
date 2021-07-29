@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+.wrapper {
+    height: 75vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .typing-demo {
+    width: 12ch;
+    animation: typing 2s steps(50), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .card{
+      width: 80rem; 
+      height: 40rem;  
+      margin: 0 auto; /* Added */
+      float: none; /* Added */
+      margin-bottom: 10px; /* Added */
+      box-shadow: 10px 10px white;
+      border-color: black;
+      max-width: 1250px;
+      width: 80%;
+      display: flex;
+    }
+
+    .card-title{
+        font-family: 'Oswald', sans-serif;
+        font-style: italic;
+        font-size: 4rem;
+    }
+
+    .card-text{
+        font-family: monospace;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    
+    @import 'https://fonts.googleapis.com/css?family=Cairo|Slabo+27px';
+ * {
+	 box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+        .card{
+            height: 100%;
+            width: 100%;
+     }
+     .card-title{
+            font-size: 100%;
+     }
+
+     .card-text{
+         font-size: 100%;
+     }
+
+     .typing-demo{
+         font-size: 2.5em;
+     }
+     
+     .card-link{
+         font-size: 100%;
+     }
+}
+     
+@media screen and (max-width: 830px) {
+
+        .card{
+            height: 80%;
+            width: 80%;
+     }
+     .card-title{
+            font-size: 80%;
+     }
+
+     .card-text{
+         font-size: 75%;
+     }
+
+     .typing-demo{
+         font-size: 2em;
+     }
+     
+     .card-link{
+         font-size: 80%;
+     }
+}
+

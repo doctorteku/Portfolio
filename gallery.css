@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+.card{
+    width: 30rem; 
+    height: 30rem;  
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    box-shadow: 10px 10px white;
+    border-color: black;
+    max-width: 1250px;
+    width: 80%;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.card-img-top{
+    width: 97%;
+    height: 50%;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+.card-text{
+    font-size: .7rem;
+    font-family: monospace;
+
+}
+
+.btn-primary{
+    background-color: black;
+    border-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.col{
+    padding-bottom: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .card{
+        height: 110%;
+        width: 100%;
+ }
+ .card-title{
+        font-size: 60%;
+ }
+
+ .card-text{
+     font-size: 70%;
+ }
+ 
+ .card-link{
+     font-size: 60%;
+ }
+
+ .btn-primary{
+     height: 14%;
+     width: 40%;
+     font-size: 47%;
+ }
+
+ .col{
+    padding-bottom: 70px;
+ }
+
+}
+
+ 
+@media screen and (max-width: 1024px) {
+
+    .card{
+        height: 95%;
+        width: 100%;
+        max-width: 100%;
+ }
+ .card-title{
+        font-size: 60%;
+ }
+
+ .card-text{
+     font-size: 57%;
+ }
+ 
+ .card-link{
+     font-size: 60%;
+ }
+
+ .btn-primary{
+     height: 15%;
+     width: 40%;
+     font-size: 35%;
+ }
+
+ .col{
+    padding-bottom: 30px;
+    padding-left: 37px;
+    padding-right: 37px;
+ }
+}
+
+@media screen and (max-width: 800px) {
+
+    .card{
+        height: 95%;
+        width: 100%;
+        max-width: 100%;
+ }
+ .card-title{
+        font-size: 60%;
+ }
+
+ .card-text{
+     font-size: 57%;
+ }
+ 
+ .card-link{
+     font-size: 60%;
+ }
+
+ .btn-primary{
+     height: 15%;
+     width: 40%;
+     font-size: 35%;
+ }
+
+ .col{
+    padding-bottom: 30px;
+    padding-left: 37px;
+    padding-right: 37px;
+ }
+}
+ 
+@media screen and (max-width: 400px) {
+
+    .card{
+        height: 95%;
+        width: 60%;
+ }
+ .card-title{
+        font-size: 60%;
+ }
+
+ .card-text{
+     font-size: 60%;
+ }
+ 
+ .card-link{
+     font-size: 60%;
+ }
+
+ .btn-primary{
+     height: 15%;
+     width: 35%;
+     font-size: 35%;
+ }
+
+ .col{
+    padding-bottom: 30px;
+ }
+}
