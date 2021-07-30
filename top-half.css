@@ -1,38 +1,111 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
-.wrapper {
-    height: 75vh;
-    /*This part is important for centering*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  
-  .typing-demo {
-    width: 12ch;
-    animation: typing 2s steps(50), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 3em;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
 
-  .card{
-      width: 80rem; 
-      height: 40rem;  
+html,
+body {
+  background: #000;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -1px;
+  text-align: center;
+  font-size: 20px;
+  height: 50vh;
+  color: #fff;
+  margin: 0;
+}
+
+.hero {
+  justify-content: center;
+  background-size: cover;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  height: 80vh;
+  width: 100%;
+}
+
+.wrapper {
+  height: 75vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.typing-demo {
+  width: 13ch;
+  animation: typing 2s steps(50), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  font-size: 3em;
+  font-style: italic;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.down {
+  text-align: center;
+  position: absolute;
+  opacity: 0.6;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+}
+
+.content {
+  box-shadow: 0 0 100px rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  position: relative;
+  background: black;
+  height: 1000px;
+  display: flex;
+  top: 100vh;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+
+.fa-github{
+	background: black;
+    color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.card{
+      width: 60rem; 
+      height: 33rem;  
       margin: 0 auto; /* Added */
       float: none; /* Added */
       margin-bottom: 10px; /* Added */
@@ -41,18 +114,27 @@
       max-width: 1250px;
       width: 80%;
       display: flex;
+      text-align: left;
+      background: white;
     }
 
     .card-title{
         font-family: 'Oswald', sans-serif;
         font-style: italic;
         font-size: 4rem;
+        color: black;
     }
 
     .card-text{
         font-family: monospace;
         font-size: 1.5rem;
         font-style: italic;
+        color: black;
+    }
+
+    .card-link{
+      height: 300px;
+      width: 300px;
     }
     
     @import 'https://fonts.googleapis.com/css?family=Cairo|Slabo+27px';
@@ -60,50 +142,126 @@
 	 box-sizing: border-box;
 }
 
+@media screen and (max-width: 1050px) {
+
+  .card{
+      height: 46%;
+      width: 87%;
+}
+.card-title{
+      font-size: 170%;
+}
+
+.card-text{
+   font-size: 100%;
+}
+
+.typing-demo{
+   font-size: 2.5em;
+}
+
+.card-link{
+   font-size: 100%;
+}
+}
 
 @media screen and (max-width: 1020px) {
 
-        .card{
-            height: 100%;
-            width: 100%;
-     }
-     .card-title{
-            font-size: 100%;
-     }
-
-     .card-text{
-         font-size: 100%;
-     }
-
-     .typing-demo{
-         font-size: 2.5em;
-     }
-     
-     .card-link{
-         font-size: 100%;
-     }
+  .card{
+      height: 100%;
+      width: 100%;
 }
-     
+.card-title{
+      font-size: 100%;
+}
+
+.card-text{
+   font-size: 100%;
+}
+
+.typing-demo{
+   font-size: 2.5em;
+}
+
+.card-link{
+   font-size: 100%;
+}
+}
+
 @media screen and (max-width: 830px) {
 
-        .card{
-            height: 80%;
-            width: 80%;
-     }
-     .card-title{
-            font-size: 80%;
-     }
-
-     .card-text{
-         font-size: 75%;
-     }
-
-     .typing-demo{
-         font-size: 2em;
-     }
-     
-     .card-link{
-         font-size: 80%;
-     }
+  .card{
+      height: 36%;
+      width: 80%;
+}
+.card-title{
+      font-size: 115%;
 }
 
+.card-text{
+   font-size: 70%;
+}
+
+.typing-demo{
+   font-size: 2em;
+}
+
+.social-button{
+   height: 30px;
+   width: 30px;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .card{
+      height: 115%;
+      width: 80%;
+}
+.card-title{
+      font-size: 80%;
+}
+
+.card-text{
+   font-size: 55%;
+}
+
+.typing-demo{
+   font-size: 2em;
+}
+
+
+.content{
+  height: 99%;
+}
+}
+
+@media screen and (max-width: 360px) {
+
+  .card{
+      height: 130%;
+      width: 80%;
+}
+.card-title{
+      font-size: 80%;
+}
+
+.card-text{
+   font-size: 55%;
+}
+
+.typing-demo{
+   font-size: 2em;
+}
+
+.social{
+  height: 50%;
+  width: 50%;
+}
+
+
+.content{
+  height: 99%;
+}
+}

@@ -5,7 +5,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background:url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg) no-repeat top center #efeff1;
+  
   background-size:cover;
 }
 .thx{
@@ -81,8 +81,3 @@ nav a:hover:before{
   }
 }
 
-@for $i from 1 through 5 {
-  nav a:nth-child(#{$i}){
-    animation:show .2s #{$i*0.1+1}s ease 1 both;
-  }
-}
